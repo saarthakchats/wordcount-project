@@ -1,0 +1,10 @@
+<title>Word Counter</title>
+    <h1 align = "center">Heyo Let's Count your Words!</h1>
+    <form action="{% url 'count' %}">
+      <div align = "center">
+        <textarea name="fulltext" rows="20" cols="100" placeholder="Enter your text here"></textarea><br/><br/>
+        <input type="submit" value="Count!">
+        <br><br><br>
+        <a href="{% url 'about' %}">About this page</a>
+      </div>
+    </form>

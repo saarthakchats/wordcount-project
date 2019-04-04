@@ -1,0 +1,11 @@
+<h1>Your words have been analyzed</h1>
+<h2>There were {{ count }} words and {{ characters }} characters</h2>
+{% for word, counters in indiwords %}
+{{ word }} -
+{{ counters }}
+<br>
+{% endfor %}
+<h2>Orginal Text was</h2>
+{{ fulltext }}
+<br>
+<a href="{% url 'home' %}">Count something else</a>
